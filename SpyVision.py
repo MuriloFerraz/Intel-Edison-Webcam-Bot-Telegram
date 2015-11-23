@@ -15,7 +15,7 @@ capture = cv2.VideoCapture(0)
 ret, img = capture.read()
 encode_param = [int(cv2.IMWRITE_JPEG_QUALITY),90]
 face_cascade = cv2.CascadeClassifier('/home/root/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('/home/roothaarcascade_eye.xml')
+eye_cascade = cv2.CascadeClassifier('/home/root/haarcascade_eye.xml')
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
