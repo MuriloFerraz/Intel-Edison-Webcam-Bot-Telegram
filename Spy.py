@@ -9,7 +9,7 @@ bot = telepot.Bot(TOKEN)
 video_capture = cv2.VideoCapture(0)
 #ret, img = video_capture.read()
 #encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
-face_cascade = cv2.CascadeClassifier('/home/root/haarcascade_frontalface_default
+face_cascade = cv2.CascadeClassifier('/home/root/haarcascade_frontalface_default.xml')
 
 while True:
         ret, frame = video_capture.read()
